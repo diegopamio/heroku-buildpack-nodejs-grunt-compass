@@ -102,6 +102,8 @@ fi
   fi
 
   status "Installing dependencies"
+  #install npm-next
+  npm install npm@next
   # Make npm output to STDOUT instead of its default STDERR
   npm install --userconfig $build_dir/.npmrc --production 2>&1 | indent
 )
