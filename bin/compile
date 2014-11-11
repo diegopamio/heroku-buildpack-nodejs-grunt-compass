@@ -105,7 +105,7 @@ fi
   #install npm-next
   npm install npm@next
   # Make npm output to STDOUT instead of its default STDERR
-  node_modules/npm/bin/npm install --userconfig $build_dir/.npmrc --production 2>&1 | indent
+  node_modules/npm/bin/npm-cli.js install --userconfig $build_dir/.npmrc --production 2>&1 | indent
 )
 
 # Persist goodies like node-version in the slug
